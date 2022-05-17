@@ -25,4 +25,18 @@ app.listen(PORT, async()=>{
     }
 })
 
+const restaruantcontroller = require("./contollers/Restaruant.controller");
+
+app.use("/", restaruantcontroller);
+
+app.listen(PORT, async()=>{
+
+    try{
+        await connect();
+        console.log("DB is Connected..!")
+    }catch(err){
+        console.log("Err", err)
+    }
+})
+
 
