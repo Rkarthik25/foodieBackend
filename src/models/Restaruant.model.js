@@ -2,7 +2,8 @@ const mongoose = require("mongoose");
 
 const restaurantSchema = new mongoose.Schema({
     id:{type: Number},
-    place:{type: String},
+    resname:{type: String},
+    location:{type:String},
     image:{type: String}
 },{
     versionKey: false,
