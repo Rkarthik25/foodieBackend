@@ -15,19 +15,11 @@ const locationController = require("./contollers/Location.controller");
 
 app.use("/", locationController);
 
-// app.listen(PORT, async()=>{
-
-//     try{
-//         await connect();
-//         console.log("DB is Connected..!")
-//     }catch(err){
-//         console.log("Err", err)
-//     }
-// })
-
 const restaurantscontroller = require("./contollers/Restaurants.controller");
 
 app.use("/", restaurantscontroller);
+
+
 
 app.listen(PORT, async()=>{
 
