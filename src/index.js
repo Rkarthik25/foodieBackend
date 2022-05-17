@@ -11,9 +11,9 @@ const connect = require("./configs/db");
 
 const PORT = process.env.PORT;
 
-const locatioController = require("./contollers/Location.controller");
+const locationController = require("./contollers/Location.controller");
 
-app.use("/", locatioController);
+app.use("/", locationController);
 
 app.listen(PORT, async()=>{
 
