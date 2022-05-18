@@ -19,6 +19,11 @@ const restaurantscontroller = require("./contollers/Restaurants.controller");
 
 app.use("/", restaurantscontroller);
 
+const userscontroller = require("./contollers/User.controller");
+
+app.use("/", userscontroller);
+
+
 
 
 app.listen(PORT, async()=>{
